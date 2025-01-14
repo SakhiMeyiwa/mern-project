@@ -8,7 +8,7 @@ const { app, server } = require('./socket/index')
 
 // const app = express()
 app.use(cors({
-    origin : https://mern-project-six-pink.vercel.app,
+    origin : https://mern-project-chat-app-sakhi.vercel.app,
     credentials : true
 }))
 app.use(express.json())
