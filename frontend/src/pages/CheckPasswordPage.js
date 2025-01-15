@@ -39,7 +39,7 @@ const CheckPasswordPage = () => {
     e.preventDefault()
     e.stopPropagation()
 
-    const URL = `${https://mern-project-mandeni-chat.vercel.app}/api/password`
+    const URL = `${process.env.REACT_APP_BACKEND_URL}/api/password`
 
     try {
         const response = await axios({
