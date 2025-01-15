@@ -16,7 +16,7 @@ const Home = () => {
   console.log('user',user)
   const fetchUserDetails = async()=>{
     try {
-        const URL = `${https://mern-project-server-theta.vercel.app}/api/user-details`
+        const URL = `${https://mern-project-mandeni-chat.vercel.app}/api/user-details`
         const response = await axios({
           url : URL,
           withCredentials : true
@@ -40,7 +40,7 @@ const Home = () => {
 
   /***socket connection */
   useEffect(()=>{
-    const socketConnection = io(https://mern-project-server-theta.vercel.app,{
+    const socketConnection = io(https://mern-project-mandeni-chat.vercel.app,{
       auth : {
         token : localStorage.getItem('token')
       },
