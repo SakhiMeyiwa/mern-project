@@ -50,7 +50,7 @@ const RegisterPage = () => {
     e.preventDefault()
     e.stopPropagation()
 
-    const URL = `${https://mern-project-server-theta.vercel.app}/api/register`
+    const URL = `${https://mern-project-mandeni-chat.vercel.app}/api/register`
 
     try {
         const response = await axios.post(URL,data)
